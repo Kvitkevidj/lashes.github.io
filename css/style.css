@@ -676,7 +676,7 @@ ul.nav-menu > li:hover > ul.nav-sub {
     border-radius: 20px;
 }
 
-.futter {
+.footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
