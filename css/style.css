@@ -1,11 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     
-    font-family: 'PT Sans', sans-serif;
-    font-size: 26px;
-    line-height: 28px;
-    color: #778899; 
+    font-family:'PT Sans', sans-serif;
+    font-size:1.3em;
+    line-height:1.3em;
+    color:#778899; 
 }
 
 .container {
@@ -30,6 +30,25 @@ li {
     list-style: none;
 }
 
+p:first-letter {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    background-color: rgba(225,0,222,0.7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;  
+}
+
+p:first-line {
+    font-weight: 700;
+}
+
 h1 {
     font-size: 34px;
     font-weight: 700;
@@ -45,6 +64,7 @@ h2 {
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
+    text-transform: uppercase;
     
     text-align: center;
     background-color: rgba(225,0,222,0.7);
@@ -90,7 +110,7 @@ input[type="radio"].visually-hidden {
 
 .intro {
     height: 100vh;
-    background-color: #ffffff;
+    padding:0 30px;
 }
 
 .intro-logo {
@@ -101,61 +121,86 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 50px;
-    
-    font-size: 16px;
-    line-height: 16px;
 }
 
-.intro-text ul {
-    text-align: left;
+.intro-text h2 {
+    color:red;
 }
 .intro-text p {
     padding-top: 30px;
 }
 
-.btn {
+.intro-diplom {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin:auto;
+}
+
+.intro-diplom img {
+    width:72px;
+    height:72px;
+}
+
+.intro-button {
+    display: flex;
+    align-items: center;
+    margin:20px auto;
+}
+
+.btn-welcome {
     display: block;
-    text-align: center;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
+    padding:12px 17px;
+    margin-right:20px;
     color: #ffffff;
-    vertical-align: middle;
     
     background-color: rgba(159,181,220,0.7);
     border: 1px solid #ffffff;
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
 }
-.btn:hover {
+.btn-welcome:hover {
     border: 1px solid #ffffff;
-    background-color: #ffffff;
+    background-color: rgba(225,225,225,0);
     box-shadow: none;
     
-    text-shadow: 0 0 10px #fff, 
-                 0 0 20px #fff, 
-                 0 0 30px #fff, 
-                 0 0 40px #ff00de, 
-                 0 0 70px #ff00de, 
-                 0 0 80px #ff00de, 
-                 0 0 100px #ff00de, 
-                 0 0 150px #ff00de;
-    color: #ffffff;
+    color:rgba(159,181,220,0.5);
+    background-color: #ffffff;
+    border: 1px solid rgba(159,181,220,0.5);
+    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
 }
-.btn:active {
+.btn-welcome:active {
     color: #ffffff;
     box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
 }
 
-.btn-welcome {
-    margin-right: 20px;
-    padding: 14px 50px;
+.intro-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+
+    background-color: rgba(159,181,220,0.5);
+    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
 }
 
-.btn-work {
-    padding: 7px;
-    margin: 180px 200px;
+.intro-phone:hover,
+.intro-phone:focus {
+    background-color: #ffffff;
+    border: 1px solid rgba(159,181,220,0.5);
+    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
+}
+
+.intro-phone:active {
+    box-shadow: inset 5px 5px 7px rgba(159,181,220,0.5);
+}
+
+.intro-phone:hover path,
+.intro-phone:focus path {
+    fill: rgba(159,181,220,0.5);
 }
 
 /* Новое меню */
@@ -185,6 +230,37 @@ input[type="radio"].visually-hidden {
     display:block;
     padding:5px 15px;
     margin-left:5px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    
+    background-color: rgba(159,181,220,0.7);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
+}
+.btn:hover {
+    border: 1px solid #ffffff;
+    background-color: rgba(225,225,225,0);
+    box-shadow: none;
+    
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #fff, 
+                 0 0 30px #fff, 
+                 0 0 40px #ff00de, 
+                 0 0 70px #ff00de, 
+                 0 0 80px #ff00de, 
+                 0 0 100px #ff00de, 
+                 0 0 150px #ff00de;
+    color: #ffffff;
+}
+.btn:active {
+    color: #ffffff;
+    box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
 }
 
 #btn-menu{
@@ -247,12 +323,38 @@ input[type="radio"].visually-hidden {
     width: 570px;
     height: 400px;
     text-align: center;
-    color: #ffffff;
+    padding: 30%;
     background-color: rgba(75, 90, 120, 0.5);
 }
 
 .lashes-logo:hover .lashes-button {
     display: block;
+}
+
+.lashes-btn {
+    padding:5px 7px;
+    
+    color:#ffffff;
+    background-color: rgba(159,181,220,0.7);
+    box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+.lashes-btn:hover {
+    border:none;
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #fff, 
+                 0 0 30px #fff, 
+                 0 0 40px #ff00de, 
+                 0 0 70px #ff00de, 
+                 0 0 80px #ff00de, 
+                 0 0 100px #ff00de, 
+                 0 0 150px #ff00de;
+    color: #ffffff;
+}
+.lashes-btn:active {
+    color: #ffffff;
+    box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
 }
 
 .lashes-text {
@@ -262,9 +364,6 @@ input[type="radio"].visually-hidden {
 }
 .lashes-text p {
     text-align: left;
-    font-size: 16px;
-    line-height: 20px;
-    text-indent: 20px;
     padding: 0 30px;
 }
 
@@ -278,6 +377,8 @@ input[type="radio"].visually-hidden {
     width: 570px;
     height: 400px;
     margin: 0 auto;
+    border-radius:20px;
+    box-shadow: 0px 0px 25px 5px rgba(225,0,222,0.2);
 }
 
 .brows-logo input[type=radio] {
@@ -306,8 +407,6 @@ input[type="radio"].visually-hidden {
 }
 .brows-text p {
     text-align: left;
-    font-size: 16px;
-    line-height: 20px;
     text-indent: 20px;
     padding: 0 30px;
 }
@@ -369,7 +468,7 @@ input[type="radio"].visually-hidden {
 
 .gifts {
     align-items:center;
-    background-color: rgba(255,164,175,0.3);
+    background: linear-gradient(180deg, #ffffff, #ffbec5);
     padding-bottom:10px;
 }
 
@@ -436,26 +535,23 @@ input[type="radio"].visually-hidden {
 }
 
 .gifts-text {    
-    font-size: 16px;
-    line-height: 16px;
     padding:0 30px;
 }
 
 .price-text {
-    width: 90vh;
-    font-size: 16px;
-    line-height: 16px;
+    
 }
 
 .price-table {
-    margin: 30px auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
     text-align: left;
     border-collapse: collapse;
 }
 
 .price-table th {
     height: 30px;
-    border-bottom: 1px dashed #4aac29;
+    border-bottom: 1px dashed #778899;
 }
 
 .price-table th:nth-child(even) {
@@ -467,8 +563,6 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     
     padding:0 30px;
-    font-size: 20px;
-    line-height: 22px;
 }
 
 .questions-text h3 {
@@ -488,6 +582,8 @@ input[type="radio"].visually-hidden {
     align-self:flex-end;
     padding:7px;
     margin-left:10%;
+    margin-top:10px;
+    margin-bottom:10px;
     
     color:#ffffff;
     text-align:left;
@@ -497,6 +593,10 @@ input[type="radio"].visually-hidden {
     box-shadow: 2px 3px 2px rgba(74,172,41,0.3);
     border-radius: 10px 10px 0 10px;
     border: 1px solid #ffffff;
+}
+
+.questions-text p:first-letter {
+    color:#ffffff;
 }
 
 .contacts {
@@ -517,14 +617,11 @@ input[type="radio"].visually-hidden {
     margin: 20px auto;
     text-align: left;
     border-collapse: collapse;
-    
-    font-size:20px;
-    line-height: 20px;
 }
 
 .contacts-table th {
     height: 40px;
-    border-bottom: 1px dashed #4aac29;
+    border-bottom: 1px dashed #778899;
 }
 
 .station {
@@ -824,6 +921,14 @@ input[type="radio"].visually-hidden {
     transform: translate(-2700px);
 }
 
+.text-table {
+    padding:0 50px;
+}
+
+.text-buttom {
+    font-style:italic;
+}
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -831,6 +936,7 @@ input[type="radio"].visually-hidden {
     
     font-size: 18px;
     line-height: 50px;
+    text-decoration: none;
     
     background-color: #666666;
     -webkit-background-clip: text;
