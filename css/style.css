@@ -31,6 +31,8 @@ li {
 }
 
 p:first-letter {
+    margin-left:20px;
+    
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
@@ -114,6 +116,10 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-logo {
+    display:flex;
+}
+
+.intro-logo img {
     margin: auto;
 }
 
@@ -285,7 +291,7 @@ input[type="radio"].visually-hidden {
   color: #f00;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
  
    #btn-menu + label{
       display: inline-block;
@@ -357,11 +363,6 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
 }
 
-.lashes-text {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 .lashes-text p {
     text-align: left;
     padding: 0 30px;
@@ -934,11 +935,21 @@ input[type="radio"].visually-hidden {
     justify-content: space-around;
     flex-wrap: wrap;
     
+    line-height: 50px;
+    
+    background-color: rgba(225,0,222,0.7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+.footer-design {
     font-size: 18px;
     line-height: 50px;
-    text-decoration: none;
     
-    background-color: #666666;
+    background-color: rgba(225,0,222,0.7);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
