@@ -287,13 +287,11 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
     
     padding: 5px 7px;
-    text-align: center;
     color: #ffffff;
     
-    background-color: rgba(159,181,220,0.7);
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
+    background-color: rgba(75, 90, 120, 0.5);
+    border-left: 1px solid #ffffff;
+    border-radius: 20px 0 0;
     
 }
 #btn-menu + label:before{
@@ -305,7 +303,7 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  
    #btn-menu + label{
       display: inline-block;
