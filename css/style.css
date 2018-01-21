@@ -3,7 +3,7 @@ body {
     padding:0;
     
     font-family:'PT Sans', sans-serif;
-    font-size:1.3em;
+    font-size:2em;
     line-height:1.3em;
     color:#778899; 
 }
@@ -33,7 +33,7 @@ li {
 p:first-letter {
     margin-left:20px;
     
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
@@ -134,7 +134,7 @@ input[type="radio"].visually-hidden {
     flex-direction:row;
     justify-content: space-around;
     align-items: baseline;
-    margin:auto;
+    margin:15px auto;
 }
 
 .intro-diplom img {
@@ -160,7 +160,7 @@ input[type="radio"].visually-hidden {
 .intro-button {
     display: flex;
     align-items: center;
-    margin:20px auto;
+    margin:50px auto;
 }
 
 .btn-welcome {
@@ -292,19 +292,23 @@ input[type="radio"].visually-hidden {
     background-color: rgba(75, 90, 120, 0.5);
     border-left: 1px solid #ffffff;
     border-radius: 20px 0 0;
-    
 }
 #btn-menu + label:before{
-  content: '\f0c9';  
+  content: '';  
   display: inline-block;
-  font-size: 22px;
 }
 #btn-menu:checked + label:before{
     display: none;
 }
 
+input[type="checkbox"] {
+    background-color:red;
+}
+
 @media screen and (max-width: 1000px) {
- 
+    .body {
+        font-size:5em;
+    }
    #btn-menu + label{
       display: inline-block;
    }
@@ -322,6 +326,10 @@ input[type="radio"].visually-hidden {
         background-color: rgba(75, 90, 120, 0.5);
         border-radius: 20px;
     }
+    
+    .btn:hover {
+        border:1px solid rgba(75, 90, 120, 0);
+    }
 }
 
 /* Конец нового меню */
@@ -332,8 +340,8 @@ input[type="radio"].visually-hidden {
 
 .lashes-logo {
     position: relative;
-    width: 570px;
-    height: 400px;
+    width: 650px;
+    height: 456px;
     margin: auto;
     background-color: #ffffff;
     overflow: hidden;
@@ -943,7 +951,7 @@ input[type="radio"].visually-hidden {
 }
 
 .text-table {
-    padding:0 50px;
+    padding:0 150px;
 }
 
 .text-buttom {
