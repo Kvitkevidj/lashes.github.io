@@ -6,6 +6,8 @@ body {
     font-size:1.3em;
     line-height:1.3em;
     color:#778899; 
+    
+    background-color:antiquewhite;
 }
 
 .container {
@@ -340,7 +342,17 @@ input[type="checkbox"] {
 /* Конец нового меню */
 
 .lashes {
+    display: flex;
     align-items:center;
+}
+
+.lashes-row {
+    flex-direction: row-reverse;
+}
+
+.lashes p {
+    text-align: left;
+    margin:0 30px;
 }
 
 .lashes-logo {
@@ -353,13 +365,9 @@ input[type="checkbox"] {
     background-image: url(../img/lashes-1.jpg);
     background-repeat: no-repeat;
     background-position: 30% 0%;
+    border:1px solid #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 0px 25px 5px rgba(225,0,222,0.2);
-}
-
-.lashes-text p {
-    text-align: left;
-    padding: 0 30px;
+    box-shadow: 10px 10px 15px rgba(225,0,222,0.2);
 }
 
 .brows {
@@ -369,8 +377,8 @@ input[type="checkbox"] {
 
 .brows-logo {
     position: relative;
-    width: 570px;
-    height: 400px;
+    width: 650px;
+    height: 460px;
     margin: 0 auto;
     border-radius:20px;
     box-shadow: 0px 0px 25px 5px rgba(225,0,222,0.2);
@@ -392,8 +400,8 @@ input[type="checkbox"] {
 
 .brows-slides img {
     float: left;
-    width: 570px;
-    height: 400px;
+    width: 650px;
+    height: 460px;
 }
 
 .brows-text {
@@ -684,10 +692,9 @@ input[type="checkbox"] {
 }
 .slider {
     position: relative;
-    width: 650px;
+    width: 452px;
     margin: 0 auto;
     background-color: white;
-    
 }
 
 .slider input[type=radio] {
@@ -696,7 +703,9 @@ input[type="checkbox"] {
 
 .slider-inner {
     overflow: hidden;
+    border:1px solid #ffffff;
     border-radius:20px;
+    box-shadow: 5px 5px 7px rgba(74,172,41,0.3);
 }
 
 .slider-slides {
@@ -706,8 +715,8 @@ input[type="checkbox"] {
 
 .slider-slides img {
     float: left;
-    width: 650px;
-    height: 460px;
+    width: 450px;
+    height: 283px;
     border-radius: 20px;
     box-shadow: 0px 0px 25px 5px rgba(225,0,222,0.2);
 }
@@ -724,8 +733,8 @@ input[type="checkbox"] {
 
 .slider-slides-2 img {
     float: left;
-    width: 650px;
-    height: 460px;
+    width: 450px;
+    height: 283px;
 }
 
 .slider-inner-3 {
@@ -740,8 +749,8 @@ input[type="checkbox"] {
 
 .slider-slides-3 img {
     float: left;
-    width: 650px;
-    height: 460px;
+    width: 450px;
+    height: 283px;
 }
 
 .slider-inner-4 {
@@ -756,8 +765,8 @@ input[type="checkbox"] {
 
 .slider-slides-4 img {
     float: left;
-    width: 650px;
-    height: 460px;
+    width: 450px;
+    height: 283px;
 }
 
 .slider-controls {
