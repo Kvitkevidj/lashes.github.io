@@ -717,7 +717,7 @@ input[type="checkbox"] {
 }
 .slider {
     position: relative;
-    width: 450px;
+    width: 650px;
     margin: 0 auto;
     background-color: white;
 }
@@ -738,8 +738,8 @@ input[type="checkbox"] {
 
 .slider-slides img {
     float: left;
-    width: 450px;
-    height: 320px;
+    width: 650px;
+    height: 460px;
 }
 
 .slider-inner-2 {
@@ -754,8 +754,8 @@ input[type="checkbox"] {
 
 .slider-slides-2 img {
     float: left;
-    width: 450px;
-    height: 320px;
+    width: 650px;
+    height: 460px;
 }
 
 .slider-inner-3 {
@@ -770,8 +770,8 @@ input[type="checkbox"] {
 
 .slider-slides-3 img {
     float: left;
-    width: 450px;
-    height: 320px;
+    width: 650px;
+    height: 460px;
 }
 
 .slider-inner-4 {
@@ -786,8 +786,8 @@ input[type="checkbox"] {
 
 .slider-slides-4 img {
     float: left;
-    width: 450px;
-    height: 320px;
+    width: 650px;
+    height: 460px;
 }
 
 .slider-controls {
@@ -796,8 +796,8 @@ input[type="checkbox"] {
 
 .slider-controls label {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin: 10px 13px;
     background-color: #cccccc;
     border: 4px solid white;
@@ -835,7 +835,7 @@ input[type="checkbox"] {
 #btn-26:checked ~ .slider-controls label[for="btn-26"],
 #btn-27:checked ~ .slider-controls label[for="btn-27"],
 #btn-28:checked ~ .slider-controls label[for="btn-28"] {
-    background-color: red;
+    background-color: rgba(225,0,222,0.7);
 }
 
 #btn-1:checked ~ .slider-inner .slider-slides {
@@ -843,27 +843,27 @@ input[type="checkbox"] {
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-450px);
+    transform: translate(-650px);
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-900px);
+    transform: translate(-1300px);
 }
 
 #btn-4:checked ~ .slider-inner .slider-slides {
-    transform: translate(-1350px);
+    transform: translate(-1950px);
 }
 
 #btn-5:checked ~ .slider-inner .slider-slides {
-    transform: translate(-1800px);
+    transform: translate(-2600px);
 }
 
 #btn-6:checked ~ .slider-inner .slider-slides {
-    transform: translate(-2250px);
+    transform: translate(-3250px);
 }
 
 #btn-7:checked ~ .slider-inner .slider-slides {
-    transform: translate(-2700px);
+    transform: translate(-3900px);
 }
 
 #btn-8:checked ~ .slider-inner-2 .slider-slides-2 {
@@ -951,7 +951,8 @@ input[type="checkbox"] {
 }
 
 .text-table {
-    padding:0 150px;
+    padding:0 100px;
+    padding-right:0;
 }
 
 .text-buttom {
