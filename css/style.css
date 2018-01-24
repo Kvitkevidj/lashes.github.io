@@ -7,7 +7,7 @@ body {
     line-height:1.3em;
     color:#778899; 
     
-    background-color: #000000;
+    background-color:brown;
 }
 
 .container {
@@ -30,6 +30,10 @@ a {
 
 li {
     list-style: none;
+}
+
+p {
+    margin:0 30px;
 }
 
 p:first-letter {
@@ -258,6 +262,9 @@ input[type="radio"].visually-hidden {
 
 .btn {
     display: block;
+    
+    text-transform:uppercase;
+    font-weight: 700;
     text-align: center;
     color: #ffffff;
    
@@ -266,8 +273,9 @@ input[type="radio"].visually-hidden {
     border-radius: 20px;
     box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
 }
+.btn:active,
 .btn:hover {
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(225,225,225,0);
     background-color: rgba(225,225,225,0);
     box-shadow: none;
     
@@ -281,11 +289,6 @@ input[type="radio"].visually-hidden {
                  0 0 150px #ff00de;
     color: #ffffff;
 }
-.btn:active {
-    color: #ffffff;
-    box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
-}
-
 #btn-menu{
   display: none;
 }
@@ -329,18 +332,18 @@ input[type="checkbox"] {
         display: block;
     }
     .btn {
-        margin-bottom: 25%;
+        margin-bottom: 15%;
     }
-    nav {
-        background-color: rgba(75, 90, 120, 0.5);
+    nav { 
+        background-color: rgba(75, 90, 120, 0.2);
     }
     .btn:hover {
         border:1px solid rgba(75, 90, 120, 0);
     }
     .list-menu > li > a{
-        font-size: 2em;
-        padding:30px 20px;
-      
+        font-size: 1.5em;
+        padding:15px 20px;
+        border-radius:40px;
     }
     .footer {
         font-size: 0.1em;
@@ -354,13 +357,12 @@ input[type="checkbox"] {
     align-items:center;
 }
 
-.lashes-row {
-    flex-direction: row-reverse;
+.lashes-wrap {
+    flex-wrap:wrap-reverse;
 }
 
-.lashes p {
-    text-align: left;
-    margin:0 30px;
+.lashes-row {
+    flex-direction: row-reverse;
 }
 
 .lashes-logo {
@@ -419,7 +421,6 @@ input[type="checkbox"] {
 .brows-text p {
     text-align: left;
     text-indent: 20px;
-    padding: 0 30px;
 }
 
 .brows-controls {
@@ -545,14 +546,6 @@ input[type="checkbox"] {
     opacity: 0;
 }
 
-.gifts-text {    
-    padding:0 30px;
-}
-
-.price-text {
-    
-}
-
 .price-table {
     margin: 0 auto;
     margin-bottom: 10px;
@@ -572,8 +565,6 @@ input[type="checkbox"] {
 .questions-text {
     display: flex;
     flex-direction: column;
-    
-    padding:0 30px;
 }
 
 .questions-text h3 {
@@ -629,6 +620,10 @@ input[type="checkbox"] {
     margin: 20px auto;
     text-align: left;
     border-collapse: collapse;
+}
+
+.contacts-table svg {
+    padding-right:7px;
 }
 
 .contacts-table th {
@@ -786,12 +781,12 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .slider-controls label {
     display: inline-block;
-    margin: 5%;
+    margin: 30%;
     width: 20px;
     height: 20px;
     background-color: #cccccc;
