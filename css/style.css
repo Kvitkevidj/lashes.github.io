@@ -7,7 +7,6 @@ body {
     line-height:1.3em;
     color:#778899; 
     
-    background-color:brown;
 }
 
 .container {
@@ -321,6 +320,10 @@ input[type="checkbox"] {
         font-size:2em;
         line-height:1.3em;
     }
+    h2 {
+        font-size:1.3em;
+        line-height:0.8em;
+    }
     #btn-menu + label{
         display: flex;
     }
@@ -390,8 +393,9 @@ input[type="checkbox"] {
     width: 650px;
     height: 460px;
     margin: 0 auto;
+    border:1px solid #ffffff;
     border-radius:20px;
-    box-shadow: 0px 0px 25px 5px rgba(225,0,222,0.2);
+    box-shadow: 10px 10px 15px rgba(225,0,222,0.2);
 }
 
 .brows-logo input[type=radio] {
@@ -576,7 +580,7 @@ input[type="checkbox"] {
     font-size: 25px;
     
     background-color: rgba(159,181,220,0.7);
-    box-shadow: -2px 3px 2px rgba(159,181,220,0.3);
+    box-shadow: -5px 5px 3px rgba(159,181,220,0.3);
     border-radius: 10px 10px 10px 0;
     border: 1px solid #ffffff;
 }
@@ -592,10 +596,14 @@ input[type="checkbox"] {
     text-align:left;
     text-indent:20px;
     
-    background-color: #4aac29;
-    box-shadow: 2px 3px 2px rgba(74,172,41,0.3);
+    background-color: rgba(255,164,175,1);
+    box-shadow: 5px 5px 3px rgba(255,164,175,0.4);
     border-radius: 10px 10px 0 10px;
     border: 1px solid #ffffff;
+}
+
+.questions-text p:first-line {
+    font-weight: 500;
 }
 
 .questions-text p:first-letter {
@@ -646,7 +654,7 @@ input[type="checkbox"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 180px;
+    width: 280px;
     margin: 0 auto;
     padding: 0;
   
@@ -657,12 +665,13 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 53px;
-    height: 53px;
+    width: 73px;
+    height: 73px;
 
     background-color: #4aac29;
     border: 1px solid #4aac29;
     border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(74,172,41,0.3);
 }
 
 .contacts-button:hover,
@@ -686,8 +695,9 @@ input[type="checkbox"] {
     height: 460px;
     margin:auto;
     
+    border:1px dotted #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 0px 25px 5px rgba(74,172,41,0.3);
+    box-shadow: 5px 5px 15px rgba(74,172,41,0.3);
 }
 
 .contacts-map iframe {
@@ -707,6 +717,7 @@ input[type="checkbox"] {
 
 .slider-inner {
     overflow: hidden;
+    z-index: 2;
     border:1px solid #ffffff;
     border-radius:50%;
     box-shadow: 5px 5px 7px rgba(74,172,41,0.3);
@@ -721,6 +732,7 @@ input[type="checkbox"] {
     float: left;
     width: 450px;
     height: 100%;
+    border-radius:20%;
 }
 
 .slider-inner-2 {
@@ -833,27 +845,27 @@ input[type="checkbox"] {
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides {
-    transform: translate(-650px);
+    transform: translate(-450px);
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides {
-    transform: translate(-1300px);
+    transform: translate(-900px);
 }
 
 #btn-4:checked ~ .slider-inner .slider-slides {
-    transform: translate(-1950px);
+    transform: translate(-1350px);
 }
 
 #btn-5:checked ~ .slider-inner .slider-slides {
-    transform: translate(-2600px);
+    transform: translate(-1800px);
 }
 
 #btn-6:checked ~ .slider-inner .slider-slides {
-    transform: translate(-3250px);
+    transform: translate(-2250px);
 }
 
 #btn-7:checked ~ .slider-inner .slider-slides {
-    transform: translate(-3900px);
+    transform: translate(-2700px);
 }
 
 #btn-8:checked ~ .slider-inner-2 .slider-slides-2 {
@@ -941,6 +953,7 @@ input[type="checkbox"] {
 }
 
 .text-table {
+    margin:0;
     padding:0 100px;
     padding-right:0;
 }
