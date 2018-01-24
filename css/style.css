@@ -249,7 +249,7 @@ input[type="radio"].visually-hidden {
 
 .nav-container{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction:column-reverse;
     width: 100%;
     z-index: 9;
 }
@@ -257,7 +257,6 @@ input[type="radio"].visually-hidden {
 .list-menu > li > a{
     display:block;
     padding:5px 15px;
-    margin-left:5px;
 }
 
 .btn {
@@ -298,7 +297,8 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     cursor: pointer;
     
-    padding: 15px 17px;
+    padding: 10px 60px;
+    margin:auto;
     color: #ffffff;
     
     background-color: rgba(75, 90, 120, 0.5);
