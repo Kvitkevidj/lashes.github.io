@@ -57,9 +57,10 @@ p:first-line {
 }
 
 h1 {
-    font-size: 34px;
+    margin:0;
+    font-size: 2em;
     font-weight: 700;
-    line-height: 34px;
+    line-height: 1em;
     text-transform: uppercase;
     
     color: #ffa4af;
@@ -164,7 +165,7 @@ input[type="radio"].visually-hidden {
 .intro-button {
     display: flex;
     align-items: center;
-    margin:20px auto;
+    margin:auto;
 }
 
 .btn-welcome {
@@ -177,35 +178,35 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     color: #ffffff;
     
-    background-color: rgba(159,181,220,0.7);
+    background-color: #ffa4af;
     border: 1px solid #ffffff;
     border-radius: 20px;
-    box-shadow: 2px 3px 4px rgba(159,181,220,0.5);
+    box-shadow: 2px 3px 4px rgba(225,164,175,0.5);
 }
 .btn-welcome:hover {
     border: 1px solid #ffffff;
     background-color: rgba(225,225,225,0);
     box-shadow: none;
     
-    color:rgba(159,181,220,0.5);
+    color:rgba(225,164,175,0.5);
     background-color: #ffffff;
-    border: 1px solid rgba(159,181,220,0.5);
-    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
+    border: 1px solid rgba(225,164,175,0.5);
+    box-shadow: 5px 5px 7px rgba(225,164,175,0.5);
 }
 .btn-welcome:active {
-    color:rgba(159,181,220,0.7);
-    box-shadow: inset 2px 3px 4px rgba(159,181,220,0.5);
+    color:rgba(225,164,175,0.5);
+    box-shadow: inset 2px 3px 4px rgba(225,164,175,0.5);
 }
 
 .intro-phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 53px;
-    height: 53px;
+    width: 63px;
+    height: 63px;
 
-    background-color: rgba(159,181,220,0.7);
-    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
+    background-color: #ffa4af;
+    box-shadow: 5px 5px 7px rgba(225,164,175,0.5);
     border: 1px solid #ffffff;
     border-radius: 20px;
 }
@@ -214,11 +215,11 @@ input[type="radio"].visually-hidden {
 .intro-phone:focus {
     background-color: #ffffff;
     border: 1px solid rgba(159,181,220,0.5);
-    box-shadow: 5px 5px 7px rgba(159,181,220,0.5);
+    box-shadow: 5px 5px 7px rgba(225,164,175,0.5);
 }
 
 .intro-phone:active {
-    box-shadow: inset 5px 5px 7px rgba(159,181,220,0.5);
+    box-shadow: inset 5px 5px 7px rgba(225,164,175,0.5);
 }
 
 .intro-phone:hover path,
@@ -321,6 +322,10 @@ input[type="checkbox"] {
         line-height:1.3em;
     }
     h2 {
+        font-size:1.3em;
+        line-height:1em;
+    }
+    h3 {
         font-size:1.3em;
         line-height:0.8em;
     }
@@ -551,7 +556,7 @@ input[type="checkbox"] {
 }
 
 .price-table {
-    margin: 0 auto;
+    margin:0 auto;
     margin-bottom: 10px;
     text-align: left;
     border-collapse: collapse;
@@ -569,12 +574,13 @@ input[type="checkbox"] {
 .questions-text {
     display: flex;
     flex-direction: column;
+    margin:0;
 }
 
 .questions-text h3 {
     align-self: flex-start;
-    padding: 7px;
-    margin-right: 10%;
+    padding: 8px;
+    margin-left: 3%;
     
     text-align:left;
     font-size: 25px;
@@ -587,7 +593,7 @@ input[type="checkbox"] {
 
 .questions-text p {
     align-self:flex-end;
-    padding:7px;
+    padding:8px;
     margin-left:10%;
     margin-top:10px;
     margin-bottom:10px;
@@ -775,7 +781,7 @@ input[type="checkbox"] {
     overflow: hidden;
     border:1px solid #ffffff;
     border-radius:50%;
-    box-shadow: 5px 5px 7px rgba(74,172,41,0.3);
+    box-shadow: 0px 0px 57px 17px rgba(0, 0, 0, 0.3);
 }
 
 .slider-slides-4 {
