@@ -19,7 +19,7 @@ body {
 
 .main-container {
     flex:1;
-    margin: 10px auto;
+    margin:auto;
     min-width: 600px;
 }
 
@@ -99,10 +99,6 @@ img {
   height: auto;
 }
 
-hr {
-    border:2px solid #000000;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -147,9 +143,6 @@ input[type="radio"].visually-hidden {
     margin:auto;
 }
 
-.intro-diplom a {
-    z-index: 1;
-}
 .intro-diplom img {
     width:90px;
     height:127px;
@@ -166,26 +159,27 @@ input[type="radio"].visually-hidden {
     border:2px solid rgb(254,197,217);
 }
 .intro-diplom .full {
-  display:none;
-  position:fixed;
-  left:0;
-  top:0;
-  right:0;
-  bottom:0;
-  padding:8%;
-  background:#CCC center no-repeat;
-  background:rgba(0, 0, 0, 0.5) center no-repeat;
-  background-size:contain;
-  background-origin:content-box;
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    padding:8%;
+    background:#CCC center no-repeat;
+    background:rgba(0, 0, 0, 0.5) center no-repeat;
+    background-size:contain;
+    background-origin:content-box;
 }
 .intro-diplom .full:target {
-  display:block;
+    display:block;
 }
 
 .intro-button {
     display: flex;
     align-items: center;
     margin: auto;
+    margin-bottom:10px;
     padding:0;
 }
 
@@ -252,7 +246,7 @@ input[type="radio"].visually-hidden {
 /* Новое меню */
 
 .f-nav { 
-    z-index: 9999; 
+    z-index: 9; 
     position: fixed; 
     left: 0; 
     top: 0; 
@@ -349,6 +343,12 @@ input[type="checkbox"] {
         font-size:1.3em;
         line-height:0.8em;
     }
+    .container {
+        padding:2%;
+    }
+    .intro-button {
+    margin-bottom:3%;
+    }
     #btn-menu + label{
         display: flex;
     }
@@ -391,7 +391,6 @@ input[type="checkbox"] {
 }
 
 .lashes-logo {
-    position: relative;
     width: 650px;
     height: 456px;
     margin: auto;
@@ -606,11 +605,16 @@ input[type="checkbox"] {
     
     text-align:left;
     font-size: 25px;
+    text-transform: uppercase;
     
     background-color: rgba(88,102,177,0.7);
    
     border-radius: 10px 10px 10px 0;
     border: 1px solid rgba(88,102,177,0.3);
+}
+
+.question-small {
+    text-transform:none;
 }
 
 .questions-text p {
@@ -746,6 +750,7 @@ input[type="checkbox"] {
 }
 
 .slider-inner {
+    z-index: 8;
     overflow: hidden;
     border:1px solid #ffffff;
     border-radius:50%;
