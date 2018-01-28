@@ -20,7 +20,6 @@ body {
 .main-container {
     flex:1;
     margin:auto;
-    min-width: 600px;
 }
 
 a {
@@ -1071,7 +1070,7 @@ input[type="checkbox"] {
 .modal {
     position: fixed;
 
-    display: block;
+    display: none;
 
     background-color: rgba(254,197,217,0.9);
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
@@ -1092,7 +1091,7 @@ input[type="checkbox"] {
     top: 120px;
     left: 50%;
 
-    min-width: 400px;
+    min-width: 350px;
     margin-left: -250px;
     padding: 10px 50px;
 }
@@ -1107,17 +1106,8 @@ input[type="checkbox"] {
 .modal-login h2 {
 
 }
-
+.modal-login p:first-letter,
 .modal-registration {
-    background-color: rgba(95,140,199,1);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
-}
-
-.modal-registration a:first-letter {
     background-color: rgba(95,140,199,1);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1129,7 +1119,7 @@ input[type="checkbox"] {
 .modal-description {
     text-align: center;
     margin:0;
-    width: 430px;
+    width: 350px;
 }
 
 .login-form p {
@@ -1137,20 +1127,24 @@ input[type="checkbox"] {
   margin-bottom: 10px;
 }
 
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
-  box-sizing: border-box;
-  width: 300px;
-  padding: 10px 15px;
-  padding-right: 40px;
+    box-sizing: border-box;
+    min-width: 350px;
+    padding: 10px 15px;
+    padding-right: 40px;
 
+    font: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
 
-  font: inherit;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background-color: rgba(177,200,231,1);
-  border: 2px solid #ffffff;
+    background-color: rgba(177,200,231,1);
+    border: 2px solid #ffffff;
     border-radius: 20px;
 }
 
@@ -1167,13 +1161,13 @@ input[type="checkbox"] {
 
 .login-icon-user {
   background-image: url(../img/user.png);
-  background-position: 260px center;
+  background-position: 310px center;
   background-repeat: no-repeat;
 }
 
 .login-icon-password {
-  background-image: url("../img/lock");
-  background-position: 260px center;
+  background-image: url("../img/lock.png");
+  background-position: 310px center;
   background-repeat: no-repeat;
 }
 
@@ -1185,6 +1179,11 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
+.login-help a{
+    color:inherit;
+}
+.login-help a:hover,
+.login-help a:focus,
 .login-checkbox:hover,
 .login-checkbox:focus {
   color: #ffffff;
@@ -1207,25 +1206,44 @@ input[type="checkbox"] {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: -2px;
+
+    width: 15px;
+    height: 3px;
+
+    background-color: red;
+}
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
 
   position: absolute;
   top: 8px;
-  left: 1px;
+  left: 3px;
 
   width: 15px;
-  height: 2px;
+  height: 3px;
 
   background-color: #ffffff;
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  transform: rotate(85deg);
+  transform: rotate(70deg);
 }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  transform: rotate(-55deg);
+  transform: rotate(300deg);
 }
+
+
+
+.modal-btn {
+    margin: auto;
+    padding: 10px;
+}
+
 
