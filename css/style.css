@@ -18,7 +18,6 @@ body {
 }
 
 .main-container {
-    flex:1;
     margin:auto;
 }
 
@@ -55,10 +54,6 @@ p:first-line {
     font-weight: 700;
 }
 
-.contacts-adress:first-line {
-    font-weight: 500;
-}
-
 h1 {
     margin:0;
     margin-top:30px;
@@ -87,16 +82,6 @@ h2 {
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 }
 
-h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 20px;
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgba(159,181,220,0.5);
-} 
-
 img {
   max-width: 100%;
   height: auto;
@@ -120,13 +105,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.intro {
-    padding:0 30px;
-}
-
 .intro-logo {
-    flex-basis: 250px;
-    flex-shrink: 1;
+    flex:0 1 600px;
     display:flex;
     min-width:350px;
 }
@@ -136,8 +116,7 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-text {
-    flex-basis: 250px;
-    flex-shrink: 3;
+    flex:1 0 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -381,10 +360,6 @@ input[type="checkbox"] {
         padding:15px 20px;
         border-radius:40px;
     }
-    
-    .brows {
-        flex-direction: column-reverse;
-    }
 }
 /* Конец нового меню */
 
@@ -399,18 +374,17 @@ input[type="checkbox"] {
 }
 
 .lashes-row {
-    flex-direction: row-reverse;
+    
 }
 
 .lashes-logo {
     flex:0 1 650px;
-    margin: auto;
+    
 }
 
 .lashes-logo img {
     width: 650px;
     height: 456px;
-    background-color: #ffffff;
     overflow: hidden;
     border:1px solid #ffffff;
     border-radius: 20px;
@@ -432,14 +406,15 @@ input[type="checkbox"] {
 .lashes-time p {
    min-width: 270px;
 }
-.slider {
+.lashes-slider {
+    flex:0 1 560px;
     display: flex;
     position: relative;
     width: 560px;
     margin: 0 auto;
 }
 
-.slider input[type=radio] {
+.lashes-slider input[type=radio] {
     display: none;
 }
 
@@ -626,15 +601,19 @@ input[type="checkbox"] {
     transform: translate(-3060px);
 }
 
+.brows {
+    flex-wrap:wrap-reverse;
+}
+
 .brows-logo {
     flex:0 1 650px;
-    margin:auto;
 }
 
 .brows-logo img {
     width: 650px;
     height: 460px;
     border:1px solid #ffffff;
+    overflow: hidden;
     border-radius:20px;
      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -642,13 +621,17 @@ input[type="checkbox"] {
 }
 
 .brows-text {
-    flex:1 0 650px;
+    flex:1 0 600px;
 }
 
 
 .gifts {
     align-items:center;
     padding-bottom:15px;
+}
+
+.gifts-text {
+    flex:1 0 650px;
 }
 
 .gifts-logo {
@@ -731,6 +714,7 @@ input[type="checkbox"] {
 }
 
 .questions-text {
+    flex:1 0 650px;
     display: flex;
     flex-direction: column;
     margin:0;
@@ -743,10 +727,14 @@ input[type="checkbox"] {
     
     text-align:left;
     font-size: 1em;
+    font-weight: 700;
+    line-height: 20px;
     text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: rgba(88,102,177,0.7) 0px 3px 3px;
     
     background-color: rgba(88,102,177,0.7);
-   
+    background-clip: text;
     border-radius: 10px 10px 10px 0;
     border: 1px solid rgba(88,102,177,0.3);
 }
@@ -786,11 +774,14 @@ input[type="checkbox"] {
     flex-wrap:wrap-reverse;
 }
 
+.contacts-adress:first-line {
+    font-weight: 500;
+}
+
 .contacts-text {
+    flex:1 0 650px;
     display:flex;
-    flex:1;
     flex-direction:column;
-    padding:20px;
     text-align:center;
 }
 
