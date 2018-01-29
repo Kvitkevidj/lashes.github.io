@@ -787,6 +787,9 @@ input[type="checkbox"] {
     text-align:center;
 }
 
+.contacts-text p {
+    margin-top:15px;
+}
 .contacts-table {
     margin: 20px auto;
     text-align: left;
