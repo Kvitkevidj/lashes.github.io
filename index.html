@@ -47,6 +47,7 @@
                  <p class="text-buttom">Посетите мои процедуры и вы сможете не только стать обладательницами роскошных ресниц, но и комфортно отдохнуть в расслабляющей обстановке.К своей работе я подхожу ответственно и со всей душой. Для меня наращивание ресниц - это настоящее искусство.</p>
             </header>
             <section class="modal modal-login">
+                <div class="modal-cell">
                 <h2>Добро пожаловать!</h2>
                 <p class="modal-description"><a class="modal-registration" href="">Зарегистрируйтесь</a><br> или введите пожалуйста<br>свой логин и пароль</p>
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -67,8 +68,66 @@
                     </p>
                     <button class="btn modal-btn" type="submit">Войти</button>
                 </form>
-                <button  class="modal-close" type="button"><!--ЗАКРЫТЬ--></button>
+                <button  class="modal-close" type="button">Закрыть</button>
                 <a class="btn modal-btn" href="#lashes">Продолжить просмотр</a>
+                </div>
+            </section>
+            <section id="cabinet" class="container cabinet">
+                <div class="main-container cabinet-form">
+                    <h2 class="visually-hidden">Фильтр услуг</h2>
+                <form class="filters-form" method="post"  action="https://echo.htmlacademy.ru" oninput="daysoutput.value=dayscount.value, daysoutputtt.value=dayscounttt.value">
+                    <fieldset class="filter-range infrastructure">
+                        <legend class="filter-range-title">Инфраструктура:</legend>
+                        <p>
+                            <input type="checkbox" name="baxter" id="filter-pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-wi-fi">
+                            <label for="filter-wi-fi">Wi-fi</label>
+                        </p>
+                    </fieldset>
+                    <fieldset class="filter-range housing">
+                        <legend class="filter-range-title">Тип жилья:</legend>
+                        <p>
+                            <input type="checkbox" name="baxter" id="filter-hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-motels" checked>
+                            <label for="filter-motels">Мотель</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="mr-natty" id="filter-apartments" checked>
+                            <label for="filter-apartments">Апартаменты</label>
+                        </p>
+                    </fieldset>
+                    <div class="filter-range-cost">
+                    <fieldset class="filter-range cost">
+                            <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+                            <div class="price-controls">
+                                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
+                            </div>
+                    </fieldset>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                        </div>
+                </form>
+                </div>
+                <div class="main-container cabinet-table">
+                    <h2>История</h2>
+                </div>
             </section>
             <section id="lashes" class="container lashes-wrap">
                 <div class="main-container lashes-text">
@@ -118,8 +177,8 @@
                 <h2>Классическое наращивание</h2>
                 <p>подойдёт тем, кто первый раз решил нарастить реснички.<br> Результат будет выглядеть как если бы вы просто накрасили ресницы хорошей удлиняющей тушью. Наращивание делается на каждую ресницу: одну искусственную на одну натуральную."</p>
                 <div class="lashes-time">
-                    <p>Время - 1 час 20 минут.</p>
-                    <p>Стоимость - 1200₽</p>
+                    <p>Время&nbsp;-&nbsp;1&nbsp;час&nbsp;20&nbsp;минут.</p>
+                    <p>Стоимость&nbsp;-&nbsp;1200₽</p>
                 </div>
             </div>
         </section>
@@ -157,8 +216,8 @@
                 <h2>Объемное наращивание 2Д</h2>
                 <p>мы визуально увеличим вам количество ресниц в два раза.<br> На одну ресничку наращивается две искусственных. При этом результат будет выглядеть очень естественно, так как для двойного объема я использую ресничку меньше чем для одинарного.</p>
                 <div class="lashes-time">
-                    <p>Время - 2 часа.</p>
-                    <p>Стоимость - 1700₽</p>
+                    <p>Время&nbsp;-&nbsp;2&nbsp;часа.</p>
+                    <p>Стоимость&nbsp;-&nbsp;1700₽</p>
                 </div>
             </div>
         </section>
@@ -196,18 +255,18 @@
                 <h2>Объемное наращивание 3Д</h2>
                 <p>Для более эффектных глаз.<br> Ваш взгляд получится ярким и притягивающим к себе внимание. На одну ресничку наращивается 3 искусственных.</p>
                 <div class="lashes-time">
-                    <p>Время - 3 часа.</p>
-                    <p>Стоимость - 2200₽</p>
+                    <p>Время&nbsp;-&nbsp;3&nbsp;часа.</p>
+                    <p>Стоимость&nbsp;-&nbsp;2200₽</p>
                 </div>
             </div>
         </section>
         <section class="lashes">
             <div class="main-container lashes-text">
                 <h2>Объемное наращивание 4Д,5Д,6Д</h2>
-                <p>Максимально яркий эффект,  как у девушек из рекламных роликов.<br> Это такие объемы, при которых используют максимально тонкие и невесомые ресницы. При этом, на одну натуральную ресничку клеится пучок из 4, 5 или 6 искусственных ресниц.</p>
+                <p>Максимально яркий эффект,  как у девушек из рекламных роликов. Это такие объемы, при которых используют максимально тонкие и невесомые ресницы. При этом, на одну натуральную ресничку клеится пучок из 4, 5 или 6 искусственных ресниц.</p>
                 <div class="lashes-time">
-                    <p>Время - 3 часа 30 минут.</p>
-                    <p>Стоимость - от 2700₽</p>
+                    <p>Время&nbsp;-&nbsp;3&nbsp;часа&nbsp;30&nbsp;минут.</p>
+                    <p>Стоимость&nbsp;-&nbsp;от&nbsp;2700₽</p>
                 </div>
             </div>
         </section>
@@ -225,8 +284,8 @@
                         <li>&#9829; Make-Up Бровей</li>
                     </ul>
                     <div class="lashes-time">
-                        <p>Время - 1 час.</p>
-                        <p>Стоимость - 800₽</p>
+                        <p>Время&nbsp;-&nbsp;1&nbsp;час.</p>
+                        <p>Стоимость&nbsp;-&nbsp;800₽</p>
                     </div>
                     <p class="text-buttom">Представления о прекрасном сочетаются с модными тенденциями и воплощаются посредством качественных материалов в умелых руках – так и создается естественная красота вашего образа!</p>
                 </div>
@@ -400,7 +459,7 @@
         <footer class="footer">
             <i class="footer-hashtag">#NastyaLashes</i>
             <small class="footer-sity">г. Дзержинский 2018г.</small>
-            <a href="#" class="footer-design">Kvitkevidj</a>
+            <small><a href="#" class="footer-design">Kvitkevidj</a></small>
         </footer>
         <nav id="navigation" class="nav-container">
                 <input type="checkbox" id="btn-menu" />

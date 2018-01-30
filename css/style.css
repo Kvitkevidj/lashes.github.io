@@ -231,7 +231,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Новое меню */
-
 .f-nav { 
     z-index: 9; 
     position: fixed; 
@@ -312,61 +311,19 @@ input[type="radio"].visually-hidden {
 input[type="checkbox"] {
     background-color:red;
 }
-
-@media screen and (max-width: 1000px) {
-    
-    body {
-        font-size:2em;
-        line-height:1.3em;
-    }
-    h1 {
-        margin-top:0;
-    }
-    h2 {
-        font-size:1.3em;
-        line-height:1em;
-    }
-    h3 {
-        font-size:1.3em;
-        line-height:0.8em;
-    }
-    .container {
-        padding:2%;
-    }
-    .intro-button {
-    margin-bottom:3%;
-    }
-    #btn-menu + label{
-        display: flex;
-    }
-    #btn-menu + label + .list-menu{
-        display: none;
-        margin-top: 50px;
-    }
-    #btn-menu:checked + label + .list-menu{
-        display: block;
-    }
-    .btn {
-        margin-bottom: 15%;
-    }
-    nav { 
-        background-color: rgba(75, 90, 120, 0.2);
-    }
-    .btn:hover {
-        border:1px solid rgba(75, 90, 120, 0);
-    }
-    .list-menu > li > a{
-        font-size: 1.5em;
-        padding:15px 20px;
-        border-radius:40px;
-    }
-}
 /* Конец нового меню */
+
+.cabinet {
+    display:none;
+    
+    background-color: rgba(254,197,217,0.9);
+}
 
 .lashes {
     display:flex;
     flex-wrap: wrap;
     align-items:center;
+    padding:0 2%;
 }
 
 .lashes-wrap {
@@ -374,12 +331,11 @@ input[type="checkbox"] {
 }
 
 .lashes-row {
-    
+    flex-direction: row-reverse;
 }
 
 .lashes-logo {
     flex:0 1 650px;
-    
 }
 
 .lashes-logo img {
@@ -400,12 +356,24 @@ input[type="checkbox"] {
 .lashes-time {
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .lashes-time p {
-   min-width: 270px;
+    margin:5px 0;
 }
+
+.lashes-time p:first-letter {
+    margin-left:0;
+    text-align: center;
+    background-color: #778899;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;  
+}
+
 .lashes-slider {
     flex:0 1 560px;
     display: flex;
@@ -753,7 +721,7 @@ input[type="checkbox"] {
     margin-bottom:10px;
     
     color:#ffffff;
-    text-align:left;
+    text-align:justify;
     text-indent:20px;
     
     background-color: rgba(177,200,231,1);
@@ -948,13 +916,22 @@ input[type="checkbox"] {
 
 .modal {
     position: fixed;
-
+    z-index: 9;
     display: none;
 
     background-color: rgba(254,197,217,0.9);
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     border:1px solid #ffffff;
     border-radius:20px;
+}
+
+.modal-login {
+    top: 120px;
+    left: 50%;
+    
+    width: 350px;
+    margin-left: -250px;
+    padding: 10px 50px;
 }
 
 .modal-show {
@@ -966,15 +943,6 @@ input[type="checkbox"] {
     animation: shake 0.6s;
 }
 
-.modal-login {
-    top: 120px;
-    left: 50%;
-
-    min-width: 350px;
-    margin-left: -250px;
-    padding: 10px 50px;
-}
-
 .modal-close {
   background-color: transparent;
   border: 0;
@@ -982,9 +950,6 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-.modal-login h2 {
-
-}
 .modal-login p:first-letter,
 .modal-registration {
     background-color: rgba(95,140,199,1);
@@ -1117,12 +1082,60 @@ input[type="checkbox"] {
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(300deg);
 }
-
-
-
 .modal-btn {
     margin: auto;
-    padding: 10px;
+    padding: 7px 15px;
 }
 
 
+@media screen and (max-width: 1000px) {
+    
+    body {
+        font-size:2em;
+        line-height:1.3em;
+    }
+    h1 {
+        margin-top:0;
+    }
+    h2 {
+        font-size:1.3em;
+        line-height:1em;
+    }
+    h3 {
+        font-size:1.3em;
+        line-height:0.8em;
+    }
+    .container {
+        padding:2%;
+    }
+    .intro-button {
+        margin-bottom:3%;
+    }
+    #btn-menu + label{
+        display: flex;
+    }
+    #btn-menu + label + .list-menu{
+        display: none;
+        margin-top: 50px;
+    }
+    #btn-menu:checked + label + .list-menu{
+        display: block;
+    }
+    .btn {
+        margin-bottom: 15%;
+    }
+    nav { 
+        background-color: rgba(75, 90, 120, 0.2);
+    }
+    .btn:hover {
+        border:1px solid rgba(75, 90, 120, 0);
+    }
+    .list-menu > li > a{
+        font-size: 1.5em;
+        padding:15px 20px;
+        border-radius:40px;
+    }
+    .lashes-slider {
+        margin-bottom:20px;
+}
+}
