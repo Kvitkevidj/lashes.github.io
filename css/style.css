@@ -1105,6 +1105,9 @@ input[type="checkbox"] {
         font-size:1.3em;
         line-height:0.8em;
     }
+    .none {
+        display:none;
+    }
     .container {
         padding:2%;
     }
