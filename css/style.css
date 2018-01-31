@@ -240,29 +240,25 @@ input[type="radio"].visually-hidden {
 } 
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 10px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:0 auto;
+    padding:10px 0;
 }
 
 .nav-container{
-    display: flex;
+    display:flex;
     flex-direction:column-reverse;
-    width: 100%;
-    z-index: 9;
-}
-
-.list-menu > li > a{
-    display:block;
-    padding:5px 15px;
-    margin-left:10px;
+    width:100%;
+    z-index:9;
 }
 
 .btn {
-    display: block;
+    display:block;
+    padding:5px 15px;
+    margin-left:10px;
     
     text-transform:uppercase;
     font-weight: 700;
@@ -284,39 +280,46 @@ input[type="radio"].visually-hidden {
 .btn:active {
     box-shadow: inset 5px 5px 7px rgba(254,197,217,0.6);
 }
-
-#btn-menu{
-  display: none;
-}
-#btn-menu + label{
-    display: none;
-    align-items: center;
-    z-index: 1;
-    cursor: pointer;
-    
-    padding: 10px 60px;
-    margin:auto;
-    color: #ffffff;
-    
-    background-color: rgba(75, 90, 120, 0.5);
-}
-#btn-menu + label:before{
-  content: '';  
-  display: inline-block;
-}
-#btn-menu:checked + label:before{
-    display: none;
-}
-
-input[type="checkbox"] {
-    background-color:red;
-}
-/* Конец нового меню */
+/* Конец меню */
 
 .cabinet {
-    display:none;
+    display:;
+    padding-top:0;
     
     background-color: rgba(254,197,217,0.9);
+    border-radius:20px;
+}
+
+.cabinet-fio {
+    flex:1 0 100%;
+    display:flex;
+    justify-content: space-around;
+    margin:10px;
+    
+    color:#ffffff;
+    
+}
+
+.cabinet-fio div {
+    display:flex;
+    align-content: center;
+}
+.cabinet-fio b {
+    margin-left:10px; 
+}
+
+.filter-material,
+.filter-type {
+    border: 1px solid #ffffff;
+    border-radius:20px;
+}
+
+.btn-form {
+    margin: 10px auto;
+}
+
+.history-header {
+    display:table-header-group;
 }
 
 .lashes {
@@ -1114,30 +1117,7 @@ input[type="checkbox"] {
     .intro-button {
         margin-bottom:3%;
     }
-    #btn-menu + label{
-        display: flex;
-    }
-    #btn-menu + label + .list-menu{
-        display: none;
-        margin-top: 50px;
-    }
-    #btn-menu:checked + label + .list-menu{
-        display: block;
-    }
-    .btn {
-        margin-bottom: 15%;
-    }
-    nav { 
-        background-color: rgba(75, 90, 120, 0.2);
-    }
-    .btn:hover {
-        border:1px solid rgba(75, 90, 120, 0);
-    }
-    .list-menu > li > a{
-        font-size: 1.5em;
-        padding:15px 20px;
-        border-radius:40px;
-    }
+    
     .lashes-slider {
         margin-bottom:20px;
 }
