@@ -1084,3 +1084,6 @@ input[type="radio"].visually-hidden {
         width:45px;
         height:45px;
 }
+    .footer {
+        margin-bottom: 110px;
+    }
