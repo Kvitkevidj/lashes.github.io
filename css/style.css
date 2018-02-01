@@ -1059,6 +1059,10 @@ input[type="radio"].visually-hidden {
         font-size:1.3em;
         line-height:0.8em;
     }
+    .f-nav {  
+        bottom: 0;
+        margin-bottom:25px;
+} 
     .none {
         display:none;
     }
