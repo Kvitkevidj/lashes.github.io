@@ -109,15 +109,9 @@ input[type="radio"].visually-hidden {
     display:flex;
     min-width:350px;
 }
-@keyframes rotate-colors { 
-    100% {
-        filter:hue-rotate(360deg);
-    }
-}
 
 .intro-logo img {
     margin: auto;
-    animation: rotate-colors 2s linear infinite;
 }
 
 .intro-text {
@@ -254,11 +248,12 @@ input[type="radio"].visually-hidden {
 .cabinet-fio b {
     margin-left:10px; 
 }
-
+.registration-form-group,
 .cabinet-form-group {
     display: flex;
     flex-direction: column;
 }
+.registration-form-group,
 .cabinet-form-type {
     display: flex;
 }
@@ -298,6 +293,7 @@ input[type="radio"].visually-hidden {
     border: 1px solid #ffffff;
     border-radius: 20px;
 }
+
 
 .filter-material,
 .filter-type {
@@ -1116,6 +1112,8 @@ input[type="radio"].visually-hidden {
     margin: auto;
     padding: 7px 15px;
 }
+
+
 
 
 @media screen and (max-width: 1000px) {
