@@ -962,6 +962,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-login {
+    display: flex;
+    flex-direction: column;
     top: 120px;
     left: 50%;
 
@@ -981,8 +983,12 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
     background-color: transparent;
-
     cursor: pointer;
+}
+
+.modal-login form,
+.modal-login div {
+    margin: auto;
 }
 
 .modal-login p:first-letter,
@@ -998,12 +1004,7 @@ input[type="radio"].visually-hidden {
 .modal-description {
     text-align: center;
     margin: 0;
-    width: 350px;
-}
-
-.login-form p {
-    margin: 0;
-    margin-bottom: 10px;
+    width: 500px;
 }
 
 ::-webkit-input-placeholder {
@@ -1029,9 +1030,11 @@ input[type="radio"].visually-hidden {
 .login-form input[type="text"],
 .login-form input[type="password"] {
     box-sizing: border-box;
-    min-width: 100%;
+    min-width: 500px;
     padding: 10px 15px;
     padding-right: 40px;
+    margin-bottom: 10px;
+    
 
     font: inherit;
     color: #ffffff;
@@ -1046,31 +1049,16 @@ input[type="radio"].visually-hidden {
     border-color: rgba(88, 102, 177, 0.7);
 }
 
-.login-form .login-help {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15px 0;
-}
-
 .login-icon-user {
     background-image: url(../img/user.png);
-    background-position: 310px center;
+    background-position: 450px center;
     background-repeat: no-repeat;
 }
 
 .login-icon-password {
     background-image: url("../img/lock.png");
-    background-position: 310px center;
+    background-position: 450px center;
     background-repeat: no-repeat;
-}
-
-.login-checkbox {
-    position: relative;
-
-    padding-left: 30px;
-
-    cursor: pointer;
 }
 
 .login-help a {
@@ -1078,61 +1066,8 @@ input[type="radio"].visually-hidden {
 }
 
 .login-help a:hover,
-.login-help a:focus,
-.login-checkbox:hover,
-.login-checkbox:focus {
+.login-help a:focus {
     color: #ffffff;
-}
-
-.login-checkbox input[type="checkbox"] + .checkbox-indicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 17px;
-    height: 17px;
-
-    border: 2px solid #778899;
-}
-
-.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-    border-color: #778899;
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-}
-
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    left: -2px;
-
-    width: 15px;
-    height: 3px;
-
-    background-color: red;
-}
-
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    left: 3px;
-
-    width: 15px;
-    height: 3px;
-
-    background-color: #ffffff;
-}
-
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-    transform: rotate(70deg);
-}
-
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-    transform: rotate(300deg);
 }
 
 @media screen and (max-width: 1000px) {
