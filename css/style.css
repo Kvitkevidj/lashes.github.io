@@ -987,6 +987,26 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
+.model-registration a {
+    color: #ffffff;
+
+}
+
+.model-registration p:first-letter {
+    margin-left: 0;
+
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: none;
+    color: #778899;
+    text-shadow: none;
+}
+
+.model-registration p:first-line {
+    font-weight: 500;
+}
+
 ::-webkit-input-placeholder {
     color: #ffffff;
 }
@@ -1014,7 +1034,7 @@ input[type="radio"].visually-hidden {
     padding: 10px 15px;
     padding-right: 40px;
     margin-bottom: 15px;
-    
+
     font: inherit;
     color: #ffffff;
     text-transform: uppercase;
