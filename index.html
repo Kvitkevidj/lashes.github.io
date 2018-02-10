@@ -57,25 +57,26 @@
             <p class="text-buttom">Посетите мои процедуры и вы сможете не только стать обладательницами роскошных ресниц, но и комфортно отдохнуть в расслабляющей обстановке.К своей работе я подхожу ответственно и со всей душой. Для меня наращивание ресниц - это настоящее искусство.</p>
         </header>
         <section class="modal modal-login">
-                <h2>Добро пожаловать!</h2>
-                <div class="modal-description">
-                    <a class="modal-registration" href="registration.html">Зарегистрируйтесь сейчас</a><br> или введите пожалуйста<br>свой логин и пароль
+            <h1>Добро пожаловать!</h1>
+            <div class="">
+                <h2><a class="modal-registration" href="registration.html">Зарегистрируйтесь сейчас</a></h2>
+                <p>или введите пожалуйста<br>свой логин и пароль</p>
+            </div>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <div>
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
                 </div>
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div>
-                        <label class="visually-hidden" for="user-login">Логин</label>
-                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-                    </div>
-                    <div>
-                        <label class="visually-hidden" for="user-password">Пароль</label>
-                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                    </div>
-                    <div class="login-help">
-                        <a class="restore" href="#">Я забыла пароль!</a>
-                    </div>
-                    <button class="btn btn-rewers" type="submit">Войти</button>
-                </form>
-                <button class="btn btn-rewers modal-close" type="button">Продолжить просмотр</button>
+                <div>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                </div>
+                <div class="form-help">
+                    <a class="restore" href="#">Я забыла пароль!</a>
+                </div>
+                <button class="btn btn-rewers" type="submit">Войти</button>
+            </form>
+            <button class="btn btn-rewers modal-close" type="button">Продолжить просмотр</button>
         </section>
         <section id="cabinet" class="container cabinet">
             <div class="cabinet-fio">

@@ -961,20 +961,21 @@ input[type="radio"].visually-hidden {
     border-radius: 20px;
 }
 
+.modal-show {
+    display: inline-block;
+    animation: bounce 0.6s;
+}
+
 .modal-login {
     display: flex;
     flex-direction: column;
+    text-align: center;
     top: 120px;
     left: 50%;
 
     width: 350px;
     margin-left: -250px;
     padding: 10px 50px;
-}
-
-.modal-show {
-    display: block;
-    animation: bounce 0.6s;
 }
 
 .modal-error {
@@ -984,27 +985,6 @@ input[type="radio"].visually-hidden {
 .modal-close {
     background-color: transparent;
     cursor: pointer;
-}
-
-.modal-login form,
-.modal-login div {
-    margin: auto;
-}
-
-.modal-login p:first-letter,
-.modal-registration {
-    background-color: rgba(95, 140, 199, 1);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
-}
-
-.modal-description {
-    text-align: center;
-    margin: 0;
-    width: 500px;
 }
 
 ::-webkit-input-placeholder {
@@ -1030,12 +1010,11 @@ input[type="radio"].visually-hidden {
 .login-form input[type="text"],
 .login-form input[type="password"] {
     box-sizing: border-box;
-    min-width: 500px;
+    width: 500px;
     padding: 10px 15px;
     padding-right: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
-
     font: inherit;
     color: #ffffff;
     text-transform: uppercase;
@@ -1061,12 +1040,12 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
 }
 
-.login-help a {
+.form-help a {
     color: inherit;
 }
 
-.login-help a:hover,
-.login-help a:focus {
+.form-help a:hover,
+.form-help a:focus {
     color: #ffffff;
 }
 

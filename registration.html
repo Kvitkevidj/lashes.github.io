@@ -17,39 +17,22 @@
             </div>
             <div class="main-container cabinet-form">
                 <h1>Регистрация</h1>
-                <form class="filters-form" action="/keksby-mail" method="post">
-                    <legend>Заполни все поля</legend>
-                    <fieldset class="filter-material">
-                        <legend class="filter-title">Особенности</legend>
-                        <div class="registration-form-group">
-                            <div class="registration-form-type">
-                                <label for="">Клей:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="registration-form-type">
-                                <label for="">Особенности:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="registration-form-type">
-                                <label for="">Аллергия:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="registration-form-type">
-                                <label for="">Эффект:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="registration-form-type">
-                                <label for="">Окрашивание:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="registration-form-type">
-                                <label for="">Пожелания:</label>
-                                <input type="text" name="" id="">
-                            </div>
-                        </div>
-                    </fieldset>
-                    <input type="submit" class="btn" value="Отправить">
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div>
+                        <label class="visually-hidden" for="user-login">Логин</label>
+                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                    </div>
+                    <div>
+                        <label class="visually-hidden" for="user-password">Пароль</label>
+                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                    </div>
+                    <div>
+                        <label class="visually-hidden" for="user-password">Повторить пароль</label>
+                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Повторить пароль">
+                    </div>
+                    <button class="btn btn-rewers" type="submit">Зарегистрироваться</button>
                 </form>
+                <button href="index.html" class="btn btn-rewers modal-close" type="button">Назад</button>
             </div>
         </section>
     </main>
