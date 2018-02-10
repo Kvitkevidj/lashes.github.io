@@ -310,6 +310,7 @@ input[type="radio"].visually-hidden {
 
 .filter-material,
 .filter-type {
+    padding-bottom: 0;
     border: 1px solid #ffffff;
     border-radius: 20px;
 }
@@ -987,24 +988,9 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.model-registration a {
-    color: #ffffff;
-
-}
-
-.model-registration p:first-letter {
-    margin-left: 0;
-
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: none;
-    color: #778899;
-    text-shadow: none;
-}
-
-.model-registration p:first-line {
-    font-weight: 500;
+.model-registration {
+    display:flex;
+    
 }
 
 ::-webkit-input-placeholder {
@@ -1114,6 +1100,10 @@ input[type="radio"].visually-hidden {
     .footer {
         margin-bottom: 110px;
     }
+    
+    .modal {
+        border-radius:0 0 20px 20px;
+    }
 
     .modal-login {
         top: 0;
@@ -1122,5 +1112,6 @@ input[type="radio"].visually-hidden {
         width: 90%;
         margin-left: -250px;
     }
+    
 
 }

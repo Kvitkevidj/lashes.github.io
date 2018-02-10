@@ -58,25 +58,27 @@
         </header>
         <section class="modal modal-login">
             <h2>Добро пожаловать!</h2>
-            <div class="model-registration">
-                <a href="registration.html">Зарегистрируйтесь сейчас</a>
-                <p>или введите свой<br>логин и пароль:</p>
-            </div>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <div>
-                    <label class="visually-hidden" for="user-login">Логин</label>
-                    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-                </div>
-                <div>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </div>
-                <div class="form-help">
-                    <a class="restore" href="#">Я забыла пароль!</a>
-                </div>
-                <button class="btn btn-rewers" type="submit">Войти</button>
+                <fieldset class="filter-type">
+                    <legend class="filter-title">Введите свой логин и пароль:</legend>
+                    <div>
+                        <label class="visually-hidden" for="user-login">Логин</label>
+                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                    </div>
+                    <div>
+                        <label class="visually-hidden" for="user-password">Пароль</label>
+                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-help">
+                        <a class="restore" href="#">Я забыла пароль!</a>
+                    </div>
+                    <button class="btn btn-rewers" type="submit">Войти</button>
+                </fieldset>
             </form>
-            <button class="btn btn-rewers modal-close" type="button">Продолжить просмотр</button>
+            <div class="model-registration">
+                <button class="btn btn-rewers modal-close" type="button" href="registration.html">Зарегистрироваться</button>
+                <button class="btn btn-rewers modal-close" type="button">Продолжить просмотр</button>
+            </div>
         </section>
         <section id="cabinet" class="container cabinet">
             <div class="cabinet-fio">
