@@ -952,7 +952,7 @@ input[type="radio"].visually-hidden {
 
 .modal {
     position: fixed;
-    z-index: 9;
+    z-index: 10;
     display: none;
 
     background-color: rgba(254, 197, 217, 0.9);
