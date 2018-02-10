@@ -963,7 +963,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-show {
-    display: inline-block;
+    display: block;
     animation: bounce 0.6s;
 }
 
