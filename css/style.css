@@ -1054,18 +1054,18 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form input:focus {
-    border-color: rgba(88, 102, 177, 0.7);
+    border-color: rgba(88, 102, 177, 0.5);
 }
 
 .login-icon-user {
     background-image: url("../img/user.png");
-    background-position: 450px center;
+    background-position: 460px center;
     background-repeat: no-repeat;
 }
 
 .login-icon-password {
     background-image: url("../img/lock.png");
-    background-position: 450px center;
+    background-position: 460px center;
     background-repeat: no-repeat;
 }
 
@@ -1077,6 +1077,23 @@ input[type="radio"].visually-hidden {
 .form-help a:focus {
     color: #ffffff;
 }
+
+.registration {
+    margin: 40px;
+}
+
+.registration-filter-title {
+    color: rgba(254, 197, 217, 1);
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.registration-filter-type {
+    border: 1px solid rgba(254, 197, 217, 1);
+    border-radius: 20px;
+}
+
 
 @media screen and (max-width: 1000px) {
 
